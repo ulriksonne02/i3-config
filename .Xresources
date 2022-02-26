@@ -1,8 +1,0 @@
-URxvt.title: Console
-URxvt.iconFile: /usr/share/icons/consola.svg
-URxvt.scrollBar: false
-URxvt.font: xft: Terminus: pixelsize = 12
-URxvt.depth: 32
-URxvt.background: rgba:0000/0000/0200/c800
-URxvt.transparent: true
-URxvt.shading: 30
