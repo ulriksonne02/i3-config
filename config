@@ -66,13 +66,13 @@ set $mod mod1
 bindsym $mod+Print exec gnome-screenshot -b
 
 # start LF
-bindsym $mod+r exec alacritty -e lf
+bindsym $mod+r exec xfce4-terminal -e lf
 
 # start zathura
 bindsym $mod+z exec zathura
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec xfce4-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
