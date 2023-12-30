@@ -6,14 +6,20 @@ font pango:Terminus 10
 # border
 default_border pixel 2
 #Set wallpaper
-exec_always feh --bg-fill ~/Pictures/Wallpapers/FVHh8igWUAEMU6u.jpg
+exec_always feh --bg-fill ~/Pictures/Wallpapers/Lake-Tahoe-in-North-America-in-the-Sierra-Nevada-Mountains-California-USA-Sunset.jpg
 #exec_always xwallpaper --zoom ~/Pictures/Wallpapers/pexels-arthouse-studio-4641265.jpg
 
 #start picom
 exec_always picom -b
 
+#start network-manager-applet
+exec_always nm-applet
+
+#start volumeicon
+exec_always volumeicon
 # start redhift
 exec redshift
+exec tlp.service
 
 # set scroll rate
 exec_always xset r rate 300 50
@@ -178,8 +184,8 @@ bindsym $mod+u resize shrink height 5 px or 5 ppt
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-  i3bar_command i3bar -t
-  status_command i3status -t -c ~/.config/i3status/i3status.conf
+  i3bar_command i3bar 
+  status_command i3status -c ~/.config/i3status/i3status.conf
 	position top	
 	colors {
         background #07222e
@@ -204,7 +210,7 @@ smart_borders on
 
 #individuals or groups, set permissions, and roles for collaborators, and use c# class                 
                   #			border  backgr. text    indicator child_border
-client.focused          #1e1f29 #1e1f29 #ffffff #7254dd   #00dd00
+client.focused          #000000 #285577 #ffffff #7254dd   #00dd00
 client.focused_inactive #000000 #00dd00 #ffffff #484e50   #5f676a
 client.unfocused        #000000 #222222 #888888 #292d2e   #222222
 client.urgent           #000000 #900000 #ffffff #900000   #900000
